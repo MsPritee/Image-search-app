@@ -3,7 +3,7 @@ const accessKey = '4UHJKf2ITRhUqikDd9suE0qmA20wFpndhHl06B_fcAs'
 const formElement = document.querySelector("frm");
 const inputElement = document.getElementById("search-box");
 const searchOutput = document.querySelector(".output");
-const ShowMore = document.getElementById(show - more - btn);
+const showMore = document.getElementById("show-more-btn");
 
 let inputData = "";
 let page = 1;
@@ -34,18 +34,25 @@ async function searchImages() {
 
         imageWrapper.appendChild("image");
         imageWrapper.appendChild("imageLink");
-        imageWrapper.appendChild("imageWrapper");
+        imageWrapper.appendChild("searchOutput");
 
     })
 
     page++
 
     if (page > 1) {
-        ShowMore.style.display = "block";
+        showMore.style.display = "block";
     }
 }
 
 
 formElement.addEventListener("submit", (event) => {
-    
+    event.preventDefault()
+    page = 1,
+    searchImages
+})
+
+showMore.addEventListener("click", () => {
+    page = 1,
+        searchImages
 })
