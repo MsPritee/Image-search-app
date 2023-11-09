@@ -25,20 +25,99 @@ h1 {
 
 #search-box {
     padding: 10px 0 10px 15px;
-    margin: 0 10px 10px 0;
+    /* margin: 0 10px 10px 0; */
     border-radius: 3px;
     width: 60%;
     max-width: 400px;
-    line-height: 1.5;
+    /* line-height: 1.5; */
     background-color: rgba(196, 255, 239, 0.669);
     box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
     font-size: 18px;
-    
+    color: #333;
 }
 
 #btn {
-    line-height: 1.5;
-    padding: 5px 0 5px 8px;
-    background-color: rgba(196, 255, 239, 0.669);
+    /* height:; */
+    padding: 10px 20px 10px 20px;
+    font-size: 20px;
+    border: none;
+    background-color: #138061;
+    cursor: pointer;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    color: bisque;
+    margin-left: 10px;
 
 }
+
+.output{
+    max-width: 1200px;
+    justify-content: space-between;
+    margin: 0, auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    
+}
+
+.image{
+    height: 100%;
+    width: 30%;
+    justify-content: space-between;
+    margin-bottom: 60px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+
+}
+
+.image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.image:hover img  {
+    opacity: 0.8;
+}
+
+.image a {
+  font-size: 20px;
+  text-decoration: none;
+  color: #333;
+  display: block;
+  padding: 10px;
+  text-transform: capitalize;
+}
+
+#show-more-btn{
+    padding: 10px 20px;
+    font-size: 20px;
+    border: none;
+    background-color: #137580;
+    cursor: pointer;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    color: bisque;
+    margin-left: 10px;
+    display: none;
+}
+
+
+
+
+@media screen and (max-width:760px) {
+    .output{
+        padding: 20px;
+    }
+    .image{
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .image {
+        width: 100%;
+    }
+}
+
