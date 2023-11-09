@@ -15,7 +15,7 @@ h1 {
     margin: 40px 0 60px 0;
 }
 
-.frm {
+#frm {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -62,7 +62,7 @@ h1 {
     
 }
 
-.image{
+.image1{
     height: 100%;
     width: 30%;
     justify-content: space-between;
@@ -72,18 +72,18 @@ h1 {
 
 }
 
-.image img{
+.image1 img{
     height: 200px;
     width: 100%;
     object-fit: cover;
     transition: opacity 0.2s ease-in-out;
 }
 
-.image:hover img  {
+.image1:hover img  {
     opacity: 0.8;
 }
 
-.image a {
+.image1 a {
   font-size: 20px;
   text-decoration: none;
   color: #333;
