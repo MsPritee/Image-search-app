@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,700;1,400&family=Yatra+One&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    margin: 40px 0 60px 0;
+}
+
+.frm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+
+}
+
+#search-box {
+    padding: 10px 0 10px 15px;
+    margin: 0 10px 10px 0;
+    border-radius: 3px;
+    width: 60%;
+    max-width: 400px;
+    line-height: 1.5;
+    background-color: rgba(196, 255, 239, 0.669);
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+    font-size: 18px;
+    
+}
+
+#btn {
+    line-height: 1.5;
+    padding: 5px 0 5px 8px;
+    background-color: rgba(196, 255, 239, 0.669);
+
+}
